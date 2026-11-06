@@ -1,0 +1,123 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+# Date created = 21:27:51  October 02, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		MUSIC_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C5T144C8
+set_global_assignment -name TOP_LEVEL_ENTITY MUSIC
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:27:51  OCTOBER 02, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 144
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_17 -to CLK
+set_location_assignment PIN_93 -to CO
+set_location_assignment PIN_91 -to KEY[1]
+set_location_assignment PIN_90 -to KEY[0]
+set_location_assignment PIN_89 -to KJ[1]
+set_location_assignment PIN_88 -to KJ[0]
+set_location_assignment PIN_133 -to AD[2]
+set_location_assignment PIN_134 -to AD[1]
+set_location_assignment PIN_136 -to AD[0]
+set_location_assignment PIN_120 -to AD[9]
+set_location_assignment PIN_122 -to AD[8]
+set_location_assignment PIN_126 -to AD[7]
+set_location_assignment PIN_132 -to AD[6]
+set_location_assignment PIN_121 -to AD[5]
+set_location_assignment PIN_125 -to AD[4]
+set_location_assignment PIN_129 -to AD[3]
+set_location_assignment PIN_26 -to seg[7]
+set_location_assignment PIN_9 -to seg[6]
+set_location_assignment PIN_28 -to seg[5]
+set_location_assignment PIN_8 -to seg[4]
+set_location_assignment PIN_30 -to seg[3]
+set_location_assignment PIN_27 -to seg[2]
+set_location_assignment PIN_25 -to seg[1]
+set_location_assignment PIN_24 -to seg[0]
+set_location_assignment PIN_41 -to seg1[7]
+set_location_assignment PIN_45 -to seg1[6]
+set_location_assignment PIN_43 -to seg1[5]
+set_location_assignment PIN_44 -to seg1[4]
+set_location_assignment PIN_42 -to seg1[3]
+set_location_assignment PIN_40 -to seg1[2]
+set_location_assignment PIN_31 -to seg1[1]
+set_location_assignment PIN_32 -to seg1[0]
+set_location_assignment PIN_52 -to lcd_rw
+set_location_assignment PIN_51 -to lcd_rs
+set_location_assignment PIN_53 -to lcd_en
+set_location_assignment PIN_55 -to lcd_data[0]
+set_location_assignment PIN_57 -to lcd_data[1]
+set_location_assignment PIN_58 -to lcd_data[2]
+set_location_assignment PIN_59 -to lcd_data[3]
+set_location_assignment PIN_60 -to lcd_data[4]
+set_location_assignment PIN_63 -to lcd_data[5]
+set_location_assignment PIN_64 -to lcd_data[6]
+set_location_assignment PIN_65 -to lcd_data[7]
+set_location_assignment PIN_118 -to BTN_RST_N
+set_global_assignment -name QIP_FILE S_ROM.qip
+set_global_assignment -name VHDL_FILE S_ROM.vhd
+set_global_assignment -name VHDL_FILE MUSIC.vhd
+set_global_assignment -name VHDL_FILE M_582.vhd
+set_global_assignment -name VHDL_FILE FP.vhd
+set_global_assignment -name VHDL_FILE SKFP.vhd
+set_global_assignment -name VHDL_FILE DIV.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE sim/Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE sim/Waveform1.vwf
+set_global_assignment -name VHDL_FILE Debounce.vhd
+set_global_assignment -name VHDL_FILE CLK_2.vhd
+set_global_assignment -name VHDL_FILE lcd1602_top.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE sim/Waveform2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE sim/Waveform3.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE sim/Waveform4.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE sim/Waveform5.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE sim/Waveform6.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE sim/Waveform7.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE sim/Waveform8.vwf
